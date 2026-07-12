@@ -72,4 +72,4 @@ Once it's running and invited to your server, everything happens automatically i
 
 ## Disclaimer
 
-This is a personal project built for a small Discord server, not something meant to scale. Keep your bot token out of version control - it's read from an environment variable specifically so it never ends up in the code.
+This is a personal project built for a small Discord server, not something meant to scale. Keep your bot token out of version control.
