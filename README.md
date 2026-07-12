@@ -1,4 +1,4 @@
-# The-Wired
+# DisWired
 
 A Discord leveling bot themed around Serial Experiments Lain, built because every XP bot I found felt the same and I wanted something with a bit more personality.
 
@@ -17,7 +17,7 @@ Instead of "levels" you climb through 13 Layers of the Wired. Chat, react, sit i
 ## Project structure
 
 ```
-The-Wired/
+DisWired/
 ├── src/
 │   ├── main.py          # entry point - loads cogs and starts the bot
 │   ├── config.py         # prefix, xp amounts, cooldowns, layer cap
