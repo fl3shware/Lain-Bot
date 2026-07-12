@@ -44,12 +44,6 @@ discord.py>=2.3.0
 
 You'll need your own bot token from the [Discord Developer Portal](https://discord.com/developers/applications). Create an application, add a bot to it, and copy the token from the Bot tab.
 
-Lain-Bot reads the token from an environment variable instead of hardcoding it in the file:
-
-```
-export DISCORD_BOT_TOKEN="add_your_own_bot_token_here"
-```
-
 You'll also need to enable **Server Members Intent** and **Message Content Intent** for your bot under the same Bot tab, or the bot won't start.
 
 ## Usage
