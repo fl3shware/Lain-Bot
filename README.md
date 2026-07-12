@@ -18,13 +18,15 @@ Instead of "levels" you climb through 13 Layers of the Wired. Chat, react, sit i
 
 ```
 lain-bot/
-├── main.py            # entry point - loads cogs and starts the bot
-├── config.py           # prefix, xp amounts, cooldowns, layer cap
-├── data.py              # flavor lines used in level-up messages
-├── data_store/            # xp_data.json, created automatically on first run
-└── cogs/
-    ├── events.py            # startup, sets bot status
-    └── xp.py                 # the whole leveling system
+├── src/
+│   ├── main.py          # entry point - loads cogs and starts the bot
+│   ├── config.py         # prefix, xp amounts, cooldowns, layer cap
+│   ├── data.py             # flavor lines used in level-up messages
+│   └── cogs/
+│       ├── events.py         # startup, sets bot status
+│       └── xp.py               # the whole leveling system
+├── data_store/               # xp_data.json, created automatically on first run
+└── requirements.txt
 ```
 
 ## Install dependencies
@@ -40,18 +42,20 @@ discord.py>=2.3.0
 
 ## Setup
 
-Lain-Bot reads your bot token from an environment variable instead of hardcoding it in the file.
+You'll need your own bot token from the [Discord Developer Portal](https://discord.com/developers/applications). Create an application, add a bot to it, and copy the token from the Bot tab.
+
+Lain-Bot reads the token from an environment variable instead of hardcoding it in the file:
 
 ```
-export DISCORD_BOT_TOKEN="your_token_here"
+export DISCORD_BOT_TOKEN="add_your_own_bot_token_here"
 ```
 
-You'll also need to enable **Server Members Intent** and **Message Content Intent** for your bot under the Bot tab in the Discord Developer Portal, or the bot won't start.
+You'll also need to enable **Server Members Intent** and **Message Content Intent** for your bot under the same Bot tab, or the bot won't start.
 
 ## Usage
 
 ```
-python3 main.py
+python3 src/main.py
 ```
 
 Once it's running and invited to your server, everything happens automatically in chat. Prefix is `=`.
